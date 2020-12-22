@@ -1,0 +1,55 @@
+.header {
+  padding: 10px;
+  border-bottom: 1px solid #D8D8D8;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  height: 62px;
+}
+
+.post {
+  font-family: serif;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: 2px solid white;
+  background-color: green;
+  opacity: 0.5;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.header__bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid-6{
+  font-family: serif;
+  font-size: 30px;
+}
+
+.posts {
+  font-family: serif;
+  padding: 8px 20px;
+  font-size: 14px;
+  border: 2px solid white;
+  background-color: green;
+  opacity: 0.5;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.post:hover{
+  opacity: 1;
+}
+
+.posts:hover{
+  opacity: 1;
+}

@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+/* containerクラスのCSSを指定してください */
+.container{
+  width:1000px;
+  padding:0px 15px;
+  margin:0 auto;
+  text-align: center;
+}
+
+
+/* top-wrapperクラスのCSSを指定してください */
+.top-wrapper{
+  height: 680px;
+  padding-top:180px;
+  padding-bottom:100px;
+  background-image:url(https://free.foto.ne.jp/free/img/images_big/fd400704.jpg);
+  color:white;
+  background-size:cover;
+}
+
+.container h1{
+  font-family: serif;
+  font-size: 40px;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, rgb(223, 11, 11) 25%, rgb(8, 228, 37) 75%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  background-color: yellowgreen;
+}
+
+.btn:hover{
+  opacity: 1;
+}

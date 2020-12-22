@@ -13,7 +13,7 @@
 - has_many :days
 
 
-## nutrition テーブル
+## nutritions テーブル
 
 | Column      | Type     | Options     |
 | ----------- | -------- | ----------- |
