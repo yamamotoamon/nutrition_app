@@ -7,6 +7,14 @@
   background-size:cover;
 }
 
+.down-wrapper{
+  height: 680px;
+  padding-top:180px;
+  padding-bottom:100px;
+  color:white;
+  background-size:cover;
+}
+
 .type{
   display: flex;
   justify-content: space-around;
@@ -22,8 +30,9 @@
   color: black;
   border: 2px solid black;
   background-color: white;
-  margin-left: 10px;
+  margin-left: 110px;
   width: 80px;
+  right: 350px;
 }
 
 .select3{
@@ -35,7 +44,7 @@
 .place{
   color: green;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;;
 }
 
 .place2{
@@ -50,16 +59,41 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 5px auto;
 }
 
 .gramme{
   color: black;
+  right: 330px;
 }
 
 .food{
   margin: 20px 0px 0px 0px;
+  left: 475px;
 }
 
 .amount{
-  margin: 20px 0px 0px 140px;
+  margin: 20px 0px 0px 225px;
+}
+
+.kcal-content {
+  margin: 0 auto;
+  width: 300px;
+  color: black;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.place4{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px auto;
+  margin-left: 350px;
+}
+
+.button{
+  color: black;
 }
