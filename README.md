@@ -27,7 +27,7 @@
 
 
 ## アプリ名
-NUTRITION_APP
+NutritionCalculation
 
 ## 概要
 食材の栄養価を計算することが出来るアプリ
@@ -54,6 +54,9 @@ NUTRITION_APP
 
 ## Demo
 https://i.gyazo.com/926220587eb2d89ece78ad727dfffe3d.mp4
+
+## URL
+https://git.heroku.com/cutritioncalculation.git
 
 ## NOTE
 ※テーブルは作成はしているが現時点では使用していない。
