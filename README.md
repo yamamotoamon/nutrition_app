@@ -56,7 +56,7 @@ NutritionCalculation
 https://i.gyazo.com/926220587eb2d89ece78ad727dfffe3d.mp4
 
 ## URL
-https://git.heroku.com/cutritioncalculation.git
+https://cutritioncalculation.herokuapp.com/
 
 ## NOTE
 ※テーブルは作成はしているが現時点では使用していない。
