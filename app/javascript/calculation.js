@@ -74,10 +74,6 @@ window.addEventListener("turbolinks:load", function(){
 
   
   const foodInput1 = document.getElementById("kcal1");
-  const foodInput2 = document.getElementById("kcal2");
-  const foodInput3 = document.getElementById("kcal3");
-  const foodInput4 = document.getElementById("kcal4");
-  const foodInput5 = document.getElementById("kcal5");
 
 
 
@@ -107,26 +103,227 @@ window.addEventListener("turbolinks:load", function(){
             var r = food[this.value].vtk * inputValue1;
             var s = food[this.value].sni * inputValue1;
             var t = food[this.value].sio * inputValue1;
-            document.getElementById("profit1").innerHTML = Math.trunc(a);
-            document.getElementById("profit2").innerHTML = (b).toFixed(1);
-            document.getElementById("profit3").innerHTML = (c).toFixed(2);
-            document.getElementById("profit4").innerHTML = (d).toFixed(2);
-            document.getElementById("profit5").innerHTML = (e).toFixed(2);
-            document.getElementById("profit6").innerHTML = (f).toFixed(2);
-            document.getElementById("profit7").innerHTML = (g).toFixed(2);
-            document.getElementById("profit8").innerHTML = (h).toFixed(2);
-            document.getElementById("profit9").innerHTML = (i).toFixed(2);
-            document.getElementById("profit10").innerHTML = (j).toFixed(2);
-            document.getElementById("profit11").innerHTML = (k).toFixed(2);
-            document.getElementById("profit12").innerHTML = (l).toFixed(2);
-            document.getElementById("profit13").innerHTML = (m).toFixed(2);
-            document.getElementById("profit14").innerHTML = (n).toFixed(2);
-            document.getElementById("profit15").innerHTML = (o).toFixed(2);
-            document.getElementById("profit16").innerHTML = (p).toFixed(2);
-            document.getElementById("profit17").innerHTML = (q).toFixed(2);
-            document.getElementById("profit18").innerHTML = (r).toFixed(2);
-            document.getElementById("profit19").innerHTML = (s).toFixed(2);
-            document.getElementById("profit20").innerHTML = (t).toFixed(2);
+
+            document.getElementById("profit1").innerHTML = Math.trunc(a); //カロリー
+            document.getElementById("profit2").innerHTML = (b).toFixed(1); //炭水化物
+            document.getElementById("profit3").innerHTML = (c).toFixed(2); //脂質
+            document.getElementById("profit4").innerHTML = (d).toFixed(2); //たんぱく質
+            document.getElementById("profit5").innerHTML = (e).toFixed(2); //糖質
+            document.getElementById("profit6").innerHTML = (f).toFixed(2); //ナトリウム
+            document.getElementById("profit7").innerHTML = (g).toFixed(2); //カリウム
+            document.getElementById("profit8").innerHTML = (h).toFixed(2); //カルシウム
+            document.getElementById("profit9").innerHTML = (i).toFixed(2); //マグネシウム
+            document.getElementById("profit10").innerHTML = (j).toFixed(2); //リン
+            document.getElementById("profit11").innerHTML = (k).toFixed(2); //鉄
+            document.getElementById("profit12").innerHTML = (l).toFixed(2); //亜鉛
+            document.getElementById("profit13").innerHTML = (m).toFixed(2); //ビタミンA
+            document.getElementById("profit14").innerHTML = (n).toFixed(2); //ビタミンB1
+            document.getElementById("profit15").innerHTML = (o).toFixed(2); //ビタミンC
+            document.getElementById("profit16").innerHTML = (p).toFixed(2); //ビタミンD
+            document.getElementById("profit17").innerHTML = (q).toFixed(2); //ビタミンE
+            document.getElementById("profit18").innerHTML = (r).toFixed(2); //ビタミンK
+            document.getElementById("profit19").innerHTML = (s).toFixed(2); //食物繊維
+            document.getElementById("profit20").innerHTML = (t).toFixed(2); //食塩
+
+            //カロリー表示数値の色分岐
+            if(a == 0){
+              document.getElementById("profit1").style.color = 'black';
+            }else if(a <= 2000){
+              document.getElementById("profit1").style.color = 'orange';
+            }else if(2400 <= a){
+              document.getElementById("profit1").style.color = 'red';
+            }else{
+              document.getElementById("profit1").style.color = 'black';
+            };
+
+            //炭水化物表示数値の色分岐
+
+            //脂質表示数値の色分岐
+            if(c == 0){
+              document.getElementById("profit3").style.color = 'black';
+            }else if(c <= 60){
+              document.getElementById("profit3").style.color = 'orange';
+            }else if(90 <= c){
+              document.getElementById("profit3").style.color = 'red';
+            }else{
+              document.getElementById("profit3").style.color = 'black';
+            };
+
+            //たんぱく質表示数値の色分岐
+            if(d == 0){
+              document.getElementById("profit4").style.color = 'black';
+            }else if(d <= 50){
+              document.getElementById("profit4").style.color = 'orange';
+            }else if(70 <= d){
+              document.getElementById("profit4").style.color = 'red';
+            }else{
+              document.getElementById("profit4").style.color = 'black';
+            };
+
+            //糖質表示数値の色分岐
+            if(e == 0){
+              document.getElementById("profit5").style.color = 'black';
+            }else if(e <= 280){
+              document.getElementById("profit5").style.color = 'orange';
+            }else if(380 <= e){
+              document.getElementById("profit5").style.color = 'red';
+            }else{
+              document.getElementById("profit5").style.color = 'black';
+            };
+
+            //ナトリウム表示数値の色分岐
+            if(f == 0){
+              document.getElementById("profit6").style.color = 'black';
+            }else if(f <= 600){
+              document.getElementById("profit6").style.color = 'orange';
+            }else if(600 <= f){
+              document.getElementById("profit6").style.color = 'red';
+            }else{
+              document.getElementById("profit6").style.color = 'black';
+            };
+
+            //カリウム表示数値の色分岐
+            if(g == 0){
+              document.getElementById("profit7").style.color = 'black';
+            }else if(g <= 2500){
+              document.getElementById("profit7").style.color = 'orange';
+            }else if(3000 <= g){
+              document.getElementById("profit7").style.color = 'red';
+            }else{
+              document.getElementById("profit7").style.color = 'black';
+            };
+
+            //カルシウム表示数値の色分岐
+            if(h == 0){
+              document.getElementById("profit8").style.color = 'black';
+            }else if(h <= 800){
+              document.getElementById("profit8").style.color = 'orange';
+            }else if(2500 <= h){
+              document.getElementById("profit8").style.color = 'red';
+            }else{
+              document.getElementById("profit8").style.color = 'black';
+            };
+
+            //マグネシウム表示数値の色分岐
+            if(i == 0){
+              document.getElementById("profit9").style.color = 'black';
+            }else if(i <= 340){
+              document.getElementById("profit9").style.color = 'orange';
+            }else{
+              document.getElementById("profit9").style.color = 'black';
+            };
+
+            //リン表示数値の色分岐
+            if(j == 0){
+              document.getElementById("profit10").style.color = 'black';
+            }else if(j <= 1000){
+              document.getElementById("profit10").style.color = 'orange';
+            }else if(3000 <= j){
+              document.getElementById("profit10").style.color = 'red';
+            }else{
+              document.getElementById("profit10").style.color = 'black';
+            };
+
+            //鉄表示数値の色分岐
+            if(k == 0){
+              document.getElementById("profit11").style.color = 'black';
+            }else if(k <= 7){
+              document.getElementById("profit11").style.color = 'orange';
+            }else if(50 <= k){
+              document.getElementById("profit11").style.color = 'red';
+            }else{
+              document.getElementById("profit11").style.color = 'black';
+            };
+
+            //亜鉛表示数値の色分岐
+            if(l == 0){
+              document.getElementById("profit12").style.color = 'black';
+            }else if(l <= 10){
+              document.getElementById("profit12").style.color = 'orange';
+            }else if(40 <= l){
+              document.getElementById("profit12").style.color = 'red';
+            }else{
+              document.getElementById("profit12").style.color = 'black';
+            };
+
+            //ビタミンA表示数値の色分岐
+            if(m == 0){
+              document.getElementById("profit13").style.color = 'black';
+            }else if(m <= 850){
+              document.getElementById("profit13").style.color = 'orange';
+            }else if(2700 <= m){
+              document.getElementById("profit13").style.color = 'red';
+            }else{
+              document.getElementById("profit13").style.color = 'black';
+            };
+
+            //ビタミンB1表示数値の色分岐
+            if(n == 0){
+              document.getElementById("profit14").style.color = 'black';
+            }else if(n <= 1.4){
+              document.getElementById("profit14").style.color = 'orange';
+            }else{
+              document.getElementById("profit14").style.color = 'black';
+            };
+
+            //ビタミンC表示数値の色分岐
+            if(o == 0){
+              document.getElementById("profit15").style.color = 'black';
+            }else if(o <= 100){
+              document.getElementById("profit15").style.color = 'orange';
+            }else{
+              document.getElementById("profit15").style.color = 'black';
+            };
+
+            //ビタミンD表示数値の色分岐
+            if(p == 0){
+              document.getElementById("profit16").style.color = 'black';
+            }else if(p <= 5.5){
+              document.getElementById("profit16").style.color = 'orange';
+            }else if(100 <= p){
+              document.getElementById("profit16").style.color = 'red';
+            }else{
+              document.getElementById("profit16").style.color = 'black';
+            };
+
+            //ビタミンE表示数値の色分岐
+            if(q == 0){
+              document.getElementById("profit17").style.color = 'black';
+            }else if(q <= 6.5){
+              document.getElementById("profit17").style.color = 'orange';
+            }else if(850 <= q){
+              document.getElementById("profit17").style.color = 'red';
+            }else{
+              document.getElementById("profit17").style.color = 'black';
+            };
+
+            //ビタミンK表示数値の色分岐
+            if(r == 0){
+              document.getElementById("profit18").style.color = 'black';
+            }else if(r <= 150){
+              document.getElementById("profit18").style.color = 'orange';
+            }else{
+              document.getElementById("profit18").style.color = 'black';
+            };
+
+            //食物繊維表示数値の色分岐
+            if(s == 0){
+              document.getElementById("profit19").style.color = 'black';
+            }else if(s <= 20){
+              document.getElementById("profit19").style.color = 'orange';
+            }else{
+              document.getElementById("profit19").style.color = 'black';
+            };
+
+            //食塩表示数値の色分岐
+            if(t == 0){
+              document.getElementById("profit20").style.color = 'black';
+            }else if(8 < t){
+              document.getElementById("profit20").style.color = 'red';
+            }else{
+              document.getElementById("profit20").style.color = 'black';
+            };
+
         });
     };
   }
