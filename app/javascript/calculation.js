@@ -136,7 +136,6 @@ window.addEventListener("turbolinks:load", function(){
               document.getElementById("profit1").style.color = 'black';
             };
 
-            //炭水化物表示数値の色分岐
 
             //脂質表示数値の色分岐
             if(c == 0){
