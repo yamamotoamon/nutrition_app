@@ -97,3 +97,16 @@
 .button{
   color: black;
 }
+
+.description{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.description1{
+  color: orange;
+}
+
+.description2{
+  color: red;
+}
