@@ -42,7 +42,7 @@
 }
 
 .place{
-  color: green;
+  color: rgb(58, 241, 58);
   display: flex;
   justify-content: space-around;;
 }
@@ -109,4 +109,16 @@
 
 .description2{
   color: red;
+}
+
+.red{
+  color: red;
+}
+
+.black{
+  color: black;
+}
+
+.orange{
+  color: orange;
 }
