@@ -136,6 +136,16 @@ window.addEventListener("turbolinks:load", function(){
               document.getElementById("profit1").style.color = 'black';
             };
 
+            //炭水化物表示数値の色分岐
+            if(b == 0){
+              document.getElementById("profit2").style.color = 'black';
+            }else if(b <= a / 0.5){
+              document.getElementById("profit2").style.color = 'orange';
+            }else if(a / 0.65 <= b){
+              document.getElementById("profit2").style.color = 'red';
+            }else{
+              document.getElementById("profit2").style.color = 'black';
+            }
 
             //脂質表示数値の色分岐
             if(c == 0){
