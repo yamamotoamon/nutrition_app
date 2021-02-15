@@ -49,14 +49,23 @@ a {
   opacity: 1;
 }
 
-section{
-  position: relative;
+.gender{
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#title{
+.btn2 {
+  margin-top: 30px;
+  padding: 8px 24px;
+  color: white;
+  opacity: 0.7;
+  border-radius: 4px;
+  background-color: red;
 }
 
-#background{
-  position: absolute;
-  background-image:url(https://free.foto.ne.jp/free/img/images_big/fd400704.jpg);
+.btn2:hover{
+  opacity: 1;
 }
