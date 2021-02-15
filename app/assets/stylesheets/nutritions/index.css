@@ -48,3 +48,15 @@ a {
 .btn:hover{
   opacity: 1;
 }
+
+section{
+  position: relative;
+}
+
+#title{
+}
+
+#background{
+  position: absolute;
+  background-image:url(https://free.foto.ne.jp/free/img/images_big/fd400704.jpg);
+}
