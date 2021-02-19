@@ -91,7 +91,7 @@
             <select class="select" name=13 id="keisan13">
               <option value=0>選択してください</option>
               <option value=25>米</option>
-              <option value=26>パン</option>
+              <option value=26>食パン</option>
             </select>
             <select class="select" name=14 id="keisan14">
               <option value=0>選択してください</option>
@@ -109,8 +109,16 @@
             <p class="amount">食事量</p>
           </div>
           <div class="place4">
-            <p>選択した食材 <span id="get"></span></p>
-            <input type="number" name="example1" class="select2" id="kcal1"><p class="gramme">g</p></p>
+            <p class="food2">選択した食材 <span id="get1"></span></p>
+            <input type="number" name="example1" class="select2" id="kcal1"><p class="gramme1">g</p></p>
+            <p class="food2">選択した食材 <span id="get2"></span></p>
+            <input type="number" name="example1" class="select4" id="kcal2"><p class="gramme2">g</p></p>
+            <p class="food2">選択した食材 <span id="get3"></span></p>
+            <input type="number" name="example1" class="select5" id="kcal3"><p class="gramme3">g</p></p>
+            <p class="food2">選択した食材 <span id="get4"></span></p>
+            <input type="number" name="example1" class="select6" id="kcal4"><p class="gramme4">g</p></p>
+            <p class="food2">選択した食材 <span id="get5"></span></p>
+            <input type="number" name="example1" class="select7" id="kcal5"><p class="gramme5">g</p></p>
           </div>
           <div class="kcal-content">
           <span>エネルギー</span>
@@ -299,13 +307,24 @@ window.addEventListener("turbolinks:load", function(){
 
   
   const foodInput1 = document.getElementById("kcal1");
+  const foodInput2 = document.getElementById("kcal2");
+  const foodInput3 = document.getElementById("kcal3");
+  const foodInput4 = document.getElementById("kcal4");
+  const foodInput5 = document.getElementById("kcal5");
 
-
+  const allFoodInput = [
+    foodInput1,
+    foodInput2,
+    foodInput3,
+    foodInput4,
+    foodInput5,
+  ];
+  
 
 
   for(let x=0; x < allPullDown.length; x++){
     allPullDown[x].onchange = function(){
-      document.getElementById("get").innerHTML = food[this.value].name;
+      document.getElementById("get1").innerHTML = food[this.value].name;
         foodInput1.addEventListener("input", () => {
             var inputValue1 = foodInput1.value;
             var a = food[this.value].kcal * inputValue1;
