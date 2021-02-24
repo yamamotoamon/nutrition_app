@@ -91,7 +91,7 @@
             <select class="select" name=13 id="keisan13">
               <option value=0>選択してください</option>
               <option value=25 id="count">米</option>
-              <option value=26>食パン</option>
+              <option value=26 id="count">食パン</option>
             </select>
             <select class="select" name=14 id="keisan14">
               <option value=0>選択してください</option>
@@ -320,11 +320,33 @@ window.addEventListener("turbolinks:load", function(){
     foodInput5,
   ];
 
+  let count = 1;
+
 
 
   for(let x=0; x < allPullDown.length; x++){
     allPullDown[x].onchange = function(){
-      document.getElementById("get1").innerHTML = food[this.value].name;
+      switch(count){
+        case 1:
+          document.getElementById("get1").innerHTML = food[this.value].name;
+          count += 1;
+          return;
+        case 2:
+          document.getElementById("get2").innerHTML = food[this.value].name;
+          count += 1;
+          return;
+        case 3:
+          document.getElementById("get3").innerHTML = food[this.value].name;
+          count += 1;
+          return;
+        case 4:
+          document.getElementById("get4").innerHTML = food[this.value].name;
+          count += 1;
+          return;
+        case 5:
+          document.getElementById("get5").innerHTML = food[this.value].name;
+          return;
+      }
         foodInput1.addEventListener("input", () => {
             var inputValue1 = foodInput1.value;
             var a = food[this.value].kcal * inputValue1;
