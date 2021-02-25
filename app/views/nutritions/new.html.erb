@@ -341,7 +341,8 @@ window.addEventListener("turbolinks:load", function(){
       } else {
         document.getElementById("get5").innerHTML = food[this.value].name;
       }
-        foodInput1.addEventListener("input", () => {
+        for(let y=0; y < allFoodInput.length; y++){
+          allFoodInput[y].addEventListener("input", () => {
             var inputValue1 = foodInput1.value;
             var a = food[this.value].kcal * inputValue1;
             var b = food[this.value].tans * inputValue1;
@@ -405,7 +406,7 @@ window.addEventListener("turbolinks:load", function(){
               document.getElementById("profit2").style.color = 'red';
             }else{
               document.getElementById("profit2").style.color = 'black';
-            }
+            };
 
             //脂質表示数値の色分岐
             if(c == 0){
@@ -593,7 +594,8 @@ window.addEventListener("turbolinks:load", function(){
               document.getElementById("profit20").style.color = 'black';
             };
 
-        });
+          });
+        };
     };
   }
 
